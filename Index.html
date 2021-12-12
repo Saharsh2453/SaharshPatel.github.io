@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>WEB222 - Final Assessment</title>
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+    
+        <div class="bodycontent">
+            <div class="top">
+                <h1><b>WEB222 - Final Assessment</b></h1>
+                <p>Name: Saharsh Patel</p>
+                <p>ID: 147920201</p>
+            </div>
+    
+           
+    
+            <div class="Block1">
+                <div class="imageBlock">
+                    <img src="image/SaharshPatel.jpg" alt="Monch" class="image1" />
+                </div>
+                <h1>Saharsh Patel</h1>
+                <h2>Web programmer, Full-stack Developer</h2>
+                <button type="button" class="resumeButton">
+                   <a href="file:///C:/Users/sahar/OneDrive/Desktop/Study/web%20development/Final%20Assesment/Resume.pdf"> <i class="fa fa-download"> Resume</i> </a>
+                </button>
+    
+                <a href="#contact"><input type="button" value="Contact Me" class="contactMeButton"></a>
+    
+                <p id="resume"></p>
+    
+            </div>
+    
+            <div class="AboutMe">
+                <div class="row">
+                    <div class="column" style="background-color:whitesmoke">
+                        <h2 id="about">About Me</h2>
+                        <p>I am the type of person that is constantly trying to keep up with the business,
+                             as a result, I have good problem-solving skills and the capacity to build an excellent user interface. 
+                             In addition, I have effective communication skills, which are essential in our profession. 
+                             Another key aspect is time management, as I am also highly timely. All of this gives me the impression that I am well-suited for the position of web developer. </p>
+                    </div>
+                    <div class="w3-responsive w3-card-4">
+                        <table class="w3-table w3-striped w3-bordered">
+                        <thead>
+                       <caption>Basic Information</caption>
+                        </thead>
+                        <br>
+                        <tbody>
+                        <tr>
+                          <td>AGE:</td>
+                          <td>18</td>
+                         
+                        </tr>
+                        <tr class="w3-white">
+                          <td>EMAIL:</td>
+                          <td>srpatel56@myseneca.ca</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>LANGUAGE:	</td>
+                          <td>English, Hindi, Gujarati</td>
+                        
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="educationBlock">
+                <h2 id="education">Education</h2>
+                <div class="row">
+                    <div class="column1 left" style="background-color: rgb(24, 151, 236)">
+                        <h2>2018 - 2020</h2>
+                        <p>High School</p>
+                    </div>
+                    <div class="column1 right" style="background-color: whitesmoke">
+                        <h2>Physics, Chemistry and Maths</h2>
+                        <p>Ved Internatinal School</p>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="column1 left" style="background-color: rgb(24, 151, 236)">
+                        <h2>2021 - 2023</h2>
+                        <p>Computer Programming<br> and Analysis</p>
+                    </div>
+                    <div class="column1 right" style="background-color: whitesmoke">
+                        <h2>Bachelor's Degree</h2>
+                        <p>Seneca College</p>
+                    </div>
+                </div>
+                <br>
+    
+            <div class="contact" id="contact">
+    
+                <div class="formBlock">
+    
+                    <form id="form1" name="form1" action="https://httpbin.org/post" method="POST" 
+                    onsubmit="return validateTextarea();">
+                    
+                            <h2>Contact Me</h2>
+    
+                            <label for="name">Name: </label>
+                            <input id="name" type="text" name="Name" placeholder="Please enter your name..." required />
+    
+                            <label for="email">Email Address: </label>
+                            <input id="email" type="email" name="Email" placeholder="Please enter your email address..."
+                                required />
+    
+                            <label for="address">Address:</label>
+                            <input id="address" type="text" name="address" placeholder="Please enter your address..."
+                                required />
+    
+                                <label for="city">City</label>
+
+                                <input list="city" type="text" name="city" placeholder="Please select your city..." required />
+                                <datalist id="city" > 
+                                    <option value="Toronto"></option>
+                                    <option value="Montreal"></option>
+                                    <option value="Ottawa"></option>
+                                    <option value="Calgary"></option>
+                                    <option value="Edmonton"></option>
+                                    <option value="Vancouver"></option>
+                                    <option value="Winnipeg"></option>                                
+                                    <option value="Brampton"></option>
+                                    <option value="Other"></option>
+                                </datalist>
+    
+                            <label for="postalCode">Postal Code:</label>
+                            <input id="postalCode" type="text" name="postalCode" required
+                                placeholder="Type your Postal Code using the format A1A 1A1, where A is a letter and 1 is a digit."
+                                pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$">
+    
+                            <label for="textarea">Anything in your mind?</label><br><br>
+    
+                            <input id="question" type="radio" name="enquiry" value="question" onclick="hiringValidation();">
+                            <label for="question">Question</label>
+    
+                            <input id="comment" type="radio" name="enquiry" value="comment" onclick="hiringValidation();">
+                            <label for="comment">Comment</label>
+    
+                            <input id="hiring" type="radio" name="enquiry" value="hiring" onclick="hiringValidation();">
+                            <label for="hiring">Hiring</label><br>
+    
+                            <textarea id="textareaspace" name="enquiry" class="textarea"></textarea>
+    
+                            <div id="hiring_charge" style="display: none;">
+                                <label>Hourly Charge: </label> <input type="number" name="hourly" placeholder="Enter hourly charge" required>
+                            </div>
+    
+                            <input type="submit" value="Submit Information">
+                            <input type="reset" value="Reset" id="reset">
+                        
+                    </form>
+    
+                </div>
+            </div>
+        
+            <div class="Block6">
+    
+                <footer>
+                    <p>&copy; 2021 Saharsh Patel</p>
+                </footer>
+    
+            </div>
+        </div>
+
+        
+        
+
+</body>
+
+</html>
